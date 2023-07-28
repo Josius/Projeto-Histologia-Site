@@ -1,3 +1,6 @@
+### HISTOLOGIA ###
+/src/main/resources/static/Images/*.pff
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar

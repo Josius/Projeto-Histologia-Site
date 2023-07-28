@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout.html}">
+	<meta charset="UTF-8">
+	<article class="narrativa">
+        <h1 class="tituloTexto">
+            nomeImagem
+        </h1>
+        <div class="textoNarrativa">
+            htmlFile|safe
+        </div>
+        <footer class="item-footer">
+            Guia Histológico
+        </footer>
+        
+    </article>
+    
+    <section id="myContainer"></section>
+
+
+    <!-- CONFIGURAÇÃO ZOOMIFY -->
+    <script type="text/javascript"> 
+        Z.showImage("myContainer", 
+
+            //IMAGEM
+            src="{{url_for('static', filename=imageFile)}}",
+
+            //LABELS E FUNCIONALIDADES
+            src="zAnnotationPath={{url_for('static', filename=xmlFile)}}&" + 
+            "zSkinPath={{url_for('static', filename='Assets/Skins/Default')}}&" + 
+            
+            //"zLogoVisible=0" + //esta funcionalidade esconde o logo, mas da conflito com outras funcoes, como zToolbarVisible
+            //"zMaskVisible=1&" + //funciona somente com a label, no texto funciona so o perimetro nao deixando cinza outras areas
+            
+            //"zRulerVisible=2&" //refere-se a cx de medida abaixo do painel miniFoto, ver 26-Ruler.htm - usar com zUnits e zUnitsPerImage
+            //"zRulerWidth=200&" + //acredito que seja a largura da cx de medida acima
+            //"zNavigatorWidth=200&" + //largura do painel miniFoto
+            //"zCaptionBoxes=0&" + //ainda nao entendi o q faz, acho que precisa de outra funcao para trabalharem juntos
+            //"zMagnifierVisible=2" + //painel direito inferior de zoom automatico com ponta da seta do mouse
+            // "zLogoCustomPath=Assets/LogoCustom/uspLogo3a24x24.png" //nao funcionou
+            
+            "zToolbarVisible=1"
+            ); 
+    </script>
+</html>

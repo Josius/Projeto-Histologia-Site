@@ -1,0 +1,113 @@
+p{
+    margin: auto;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-pos{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* para mudar posicoes do txt e da img */
+/* .flex-direction{
+    flex-direction: row-reverse;
+}
+*/
+
+/* .imagem não funciona */
+/* .imagem{
+    width:"60%";
+    height:"60%";
+}
+*/
+
+/* 
+#titulo{
+    color: white;
+    background-color: #64c4d2;    
+}
+*/
+
+.overflow-y{
+    /* font-family: montserrat, arial, sans-serif; */
+    /* font-family: Source Sans Pro, sans-serif; */
+    margin: auto;
+    background-color: #d3e1ed;
+    overflow-y: hidden;
+}
+
+.cabecalho{
+    
+    font-family: Source Sans Pro SemiBold; /*TESTE DE FONTE PARA CABEÇALHOS, RODAPÉS E TÍTULOS*/
+    color: white;
+    background-color: #64c4d2;
+    padding: 3px;
+    border-bottom-color: #fcb421;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    justify-content:space-between;
+}
+
+.narrativa{
+    
+    background-color: #ededed;
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    max-width: 450px;
+
+    justify-self: center;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 150%;
+    overflow-y: scroll;
+    font-size: 15px;
+    
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.tituloTexto{
+    font-family: Source Sans Pro SemiBold;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #1094ab;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.textoNarrativa{
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.item-footer{
+    font-family: Source Sans Pro SemiBold;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #1094ab;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#myContainer{
+    
+    width:100%;
+    height: 100%;
+    max-height: 600px;
+    border:0px;
+}
+

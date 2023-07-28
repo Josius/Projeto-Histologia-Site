@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layoutVisualizacao.html}">
+<meta charset="UTF-8">
+
+<section layout:fragment="content">
+    <article class="narrativa">
+        <h1 class="tituloTexto">
+            <!-- nomeImagem -->
+            Pele Grossa
+        </h1>
+        <div class="textoNarrativa" th:utext="${inHtml}">
+            
+        </div>
+        <footer class="item-footer">
+            Guia Histológico
+        </footer>
+
+    </article>
+
+    <section id="myContainer"></section>
+
+
+    <!-- CONFIGURAÇÃO ZOOMIFY -->
+    <script type="text/javascript">
+        Z.showImage("myContainer",
+
+            //IMAGEM
+            "Images/L01PeleGrossaCoximdeGatoL2HE40X.pff",
+            // "Images/L60PelefinaHE40XB.pff",
+
+            //LABELS E FUNCIONALIDADES
+            // IMPORTANTE -> zAnnotationPath somente reconhece o caminho relativo a partir do diretório static
+            
+            "zAnnotationPath=Assets/Annotations/Narratives/L01PeleGrossaCoximdeGatoL2HE40X-annotations.xml&" +
+            // "zAnnotationPath=Assets/Annotations/Narratives/L60PelefinaHE40XB-annotations.xml&" +
+            
+            
+            // "zAnnotationPath=Assets/Narratives/L60PelefinaHE40XB-annotations.xml&" +
+            "zSkinPath=Assets/Skins/Default&" +
+
+            //"zLogoVisible=0" + //esta funcionalidade esconde o logo, mas da conflito com outras funcoes, como zToolbarVisible
+            //"zMaskVisible=1&" + //funciona somente com a label, no texto funciona so o perimetro nao deixando cinza outras areas
+
+            //"zRulerVisible=2&" //refere-se a cx de medida abaixo do painel miniFoto, ver 26-Ruler.htm - usar com zUnits e zUnitsPerImage
+            //"zRulerWidth=200&" + //acredito que seja a largura da cx de medida acima
+            //"zNavigatorWidth=200&" + //largura do painel miniFoto
+            //"zCaptionBoxes=0&" + //ainda nao entendi o q faz, acho que precisa de outra funcao para trabalharem juntos
+            //"zMagnifierVisible=2" + //painel direito inferior de zoom automatico com ponta da seta do mouse
+            // "zLogoCustomPath=Assets/LogoCustom/uspLogo3a24x24.png" //nao funcionou
+
+            "zToolbarVisible=1"
+        ); 
+    </script>
+
+</section>
+
+</html>
