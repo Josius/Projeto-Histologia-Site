@@ -6,10 +6,10 @@
 <section layout:fragment="content">
     <article class="narrativa">
         <h1 class="tituloTexto">
-            <!-- nomeImagem -->
-            Pele Grossa
+            <span th:text="${configs[0]}"></span>
+            
         </h1>
-        <div class="textoNarrativa" th:utext="${inHtml}">
+        <div class="textoNarrativa" th:utext="${configs[1]}">
             
         </div>
         <footer class="item-footer">
@@ -20,24 +20,27 @@
 
     <section id="myContainer"></section>
 
-
     <!-- CONFIGURAÇÃO ZOOMIFY -->
+    <script th:inline="javascript">
+        var configs = /*[[${configs}]]*/ "";
+    </script>
+
     <script type="text/javascript">
         Z.showImage("myContainer",
 
-            //IMAGEM
-            "Images/L01PeleGrossaCoximdeGatoL2HE40X.pff",
+        //IMAGEM
             // "Images/L60PelefinaHE40XB.pff",
+            // "Images/L01PeleGrossaCoximdeGatoL2HE40X.pff",
+            configs[2],
 
-            //LABELS E FUNCIONALIDADES
-            // IMPORTANTE -> zAnnotationPath somente reconhece o caminho relativo a partir do diretório static
-            
-            "zAnnotationPath=Assets/Annotations/Narratives/L01PeleGrossaCoximdeGatoL2HE40X-annotations.xml&" +
+        //LABELS E FUNCIONALIDADES
+        // IMPORTANTE -> zAnnotationPath somente reconhece o caminho relativo a partir do diretório static
             // "zAnnotationPath=Assets/Annotations/Narratives/L60PelefinaHE40XB-annotations.xml&" +
-            
-            
-            // "zAnnotationPath=Assets/Narratives/L60PelefinaHE40XB-annotations.xml&" +
-            "zSkinPath=Assets/Skins/Default&" +
+            // "zAnnotationPath=Assets/Annotations/Narratives/L01PeleGrossaCoximdeGatoL2HE40X-annotations.xml&" +
+            configs[3]+"&"+
+
+
+            // "zSkinPath=Assets/Skins/Default&" +
 
             //"zLogoVisible=0" + //esta funcionalidade esconde o logo, mas da conflito com outras funcoes, como zToolbarVisible
             //"zMaskVisible=1&" + //funciona somente com a label, no texto funciona so o perimetro nao deixando cinza outras areas
