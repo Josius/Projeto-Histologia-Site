@@ -26,7 +26,8 @@ public class LaminaController {
 
 		ModelAndView mv = new ModelAndView("visualizando/lamina.html");
 
-		Lamina lamina = laminaService.criaLamina();
+		Lamina lamina = laminaService.getLamina(2L);
+		// Lamina lamina = laminaService.criaLamina();
 		
 		mv.addObject("lamina", lamina);
 
