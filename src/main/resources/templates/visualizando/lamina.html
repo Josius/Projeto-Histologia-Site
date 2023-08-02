@@ -1,66 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-    layout:decorate="~{layoutVisualizacao.html}">
-<meta charset="UTF-8">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 
-<section layout:fragment="content">
-    <article class="narrativa">
-        <h1 class="tituloTexto">
-            <!-- <span th:text="${configs[0]}"></span> -->
-            <span th:text="${lamina.nome}"></span>
-            
-        </h1>
-        <!-- <div class="textoNarrativa" th:utext="${configs[1]}"> -->
-        <div class="textoNarrativa">
-            <span th:utext="${lamina.descricaoHtm}"></span>
-        </div>
-        <footer class="item-footer">
-            Guia Histológico
-        </footer>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" th:href="@{/css/visualizando/geral.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/visualizando/header.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/visualizando/article.css}" type="text/css">
 
-    </article>
+    <script type="text/javascript" src="ZoomifyImageViewerEnterprise-min.js"></script>
 
-    <section id="myContainer"></section>
+</head>
 
-    <!-- CONFIGURAÇÃO ZOOMIFY -->
-    <!-- <script th:inline="javascript">
-        var configs = /*[[${configs}]]*/ "";
-    </script> -->
-    <script th:inline="javascript">
-        var configs = /*[[${lamina}]]*/ "";
-    </script>
+<body class="overflow-y">
 
-    <script type="text/javascript">
-        Z.showImage("myContainer",
+    <header th:replace="~{/fragments/visualizando/header :: header}"></header>
 
-        //IMAGEM
-            // "Images/L60PelefinaHE40XB.pff",
-            // "Images/L01PeleGrossaCoximdeGatoL2HE40X.pff",
-            configs.rotaPff,
+    <section layout:fragment="content" class="flex-container flex-direction">
+        <article th:replace="~{/fragments/visualizando/article :: article}"></article>
 
-        //LABELS E FUNCIONALIDADES
-        // IMPORTANTE -> zAnnotationPath somente reconhece o caminho relativo a partir do diretório static
-            // "zAnnotationPath=Assets/Annotations/Narratives/L60PelefinaHE40XB-annotations.xml&" +
-            // "zAnnotationPath=Assets/Annotations/Narratives/L01PeleGrossaCoximdeGatoL2HE40X-annotations.xml&" +
-            configs.rotaXml+"&"+
+        <section id="myContainer"></section>
 
+        <!-- CONFIGURAÇÃO ZOOMIFY -->
+        <script th:inline="javascript">
+            var configs = /*[[${lamina}]]*/ "";
+        </script>
 
-            // "zSkinPath=Assets/Skins/Default&" +
+        <script type="text/javascript">
+            Z.showImage("myContainer",
+                //IMAGEM
+                configs.rotaPff,
+                //LABELS E FUNCIONALIDADES
+                // IMPORTANTE -> zAnnotationPath somente reconhece o caminho relativo a partir do diretório static
+                configs.rotaXml + "&" +
+                "zToolbarVisible=1"
+            ); 
+        </script>
+    </section>
 
-            //"zLogoVisible=0" + //esta funcionalidade esconde o logo, mas da conflito com outras funcoes, como zToolbarVisible
-            //"zMaskVisible=1&" + //funciona somente com a label, no texto funciona so o perimetro nao deixando cinza outras areas
-
-            //"zRulerVisible=2&" //refere-se a cx de medida abaixo do painel miniFoto, ver 26-Ruler.htm - usar com zUnits e zUnitsPerImage
-            //"zRulerWidth=200&" + //acredito que seja a largura da cx de medida acima
-            //"zNavigatorWidth=200&" + //largura do painel miniFoto
-            //"zCaptionBoxes=0&" + //ainda nao entendi o q faz, acho que precisa de outra funcao para trabalharem juntos
-            //"zMagnifierVisible=2" + //painel direito inferior de zoom automatico com ponta da seta do mouse
-            // "zLogoCustomPath=Assets/LogoCustom/uspLogo3a24x24.png" //nao funcionou
-
-            "zToolbarVisible=1"
-        ); 
-    </script>
-
-</section>
+</body>
 
 </html>

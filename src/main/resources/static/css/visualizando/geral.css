@@ -39,9 +39,18 @@ p{
     overflow-y: hidden;
 }
 
-.cabecalho{
+#myContainer{
     
-    font-family: Source Sans Pro SemiBold; /*TESTE DE FONTE PARA CABEÇALHOS, RODAPÉS E TÍTULOS*/
+    width:100%;
+    height: 100%;
+    max-height: 600px;
+    border:0px;
+}
+
+/* header  */
+/* .cabecalho{
+    
+    font-family: Source Sans Pro SemiBold;
     color: white;
     background-color: #64c4d2;
     padding: 3px;
@@ -49,9 +58,10 @@ p{
     border-bottom-width: 2px;
     border-bottom-style: solid;
     justify-content:space-between;
-}
+} */
 
-.narrativa{
+/* article */
+/* .narrativa{
     
     background-color: #ededed;
     height: 100%;
@@ -101,13 +111,7 @@ p{
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-}
+} */
 
-#myContainer{
-    
-    width:100%;
-    height: 100%;
-    max-height: 600px;
-    border:0px;
-}
+
 
