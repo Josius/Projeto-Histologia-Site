@@ -3,6 +3,7 @@ package local.histologia.services;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Optional;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,9 +17,9 @@ public class LaminaService {
 	@Autowired
 	LaminaRepository laminaRepository;
 
-	public Lamina getLamina(Long id) {
+	public Lamina getLamina(String id) {
 		
-		Optional<Lamina> lamina = laminaRepository.findById(id);
+		Optional<Lamina> lamina = laminaRepository.findById(UUID.fromString(id));
 		
 		if(lamina.isEmpty()) {
 			Lamina respLamina = new Lamina();

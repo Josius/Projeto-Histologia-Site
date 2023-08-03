@@ -19,10 +19,14 @@ public class LaminaController {
 
 		ModelAndView mv = new ModelAndView("visualizando/lamina.html");
 
-		Lamina lamina = laminaService.getLamina(2L);
+		// Lamina lamina = laminaService.getLamina("f391e054-6dde-4198-bdbd-14fa9496e2c4");
+		Lamina lamina = laminaService.getLamina("ac9344eb-2f29-4402-bba9-82a353b8899e");
 		
 		mv.addObject("lamina", lamina);
 
 		return mv;
 	}
 }
+
+// "f391e054-6dde-4198-bdbd-14fa9496e2c4"	-> id Pele Fina
+// "ac9344eb-2f29-4402-bba9-82a353b8899e"	-> id Pele Grossa
