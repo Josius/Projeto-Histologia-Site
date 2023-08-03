@@ -1,0 +1,7 @@
+CREATE TABLE lamina(
+	id UUID NOT NULL PRIMARY KEY,
+	nome VARCHAR(100) NOT NULL,
+	descricao_htm VARCHAR(100) NOT NULL,
+	rota_pff VARCHAR(100) NOT NULL,
+	rota_xml VARCHAR(100) NOT NULL
+);
