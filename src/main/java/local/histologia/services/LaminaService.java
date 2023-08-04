@@ -5,30 +5,42 @@ import java.io.FileReader;
 import java.util.Optional;
 import java.util.UUID;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import local.histologia.entities.Lamina;
+import local.histologia.records.LaminaRecord;
 import local.histologia.repositories.LaminaRepository;
 
 @Service
 public class LaminaService {
 
-	@Autowired
-	LaminaRepository laminaRepository;
+	private final LaminaRepository laminaRepository;
 
-	public Lamina getLamina(String id) {
-		
+	public LaminaService(LaminaRepository laminaRepository) {
+
+		this.laminaRepository = laminaRepository;
+	}
+
+	public LaminaRecord getLamina(String id) {
+
 		Optional<Lamina> lamina = laminaRepository.findById(UUID.fromString(id));
-		
-		if(lamina.isEmpty()) {
+
+		if (lamina.isEmpty()) {
 			Lamina respLamina = new Lamina();
 			respLamina.setNome("Não encontrado");
 		}
-		
+
 		getArquivoHtmESetEmDescricaoHtm(lamina);
 
-		return lamina.get();
+		return criaLaminaRecord(lamina);
+	}
+
+	private LaminaRecord criaLaminaRecord(Optional<Lamina> lamina) {
+		return new LaminaRecord(
+				lamina.get().getNome(),
+				lamina.get().getDescricaoHtm(),
+				lamina.get().getRotaPff(),
+				lamina.get().getRotaXml());
 	}
 
 	private void getArquivoHtmESetEmDescricaoHtm(Optional<Lamina> lamina) {
@@ -39,7 +51,7 @@ public class LaminaService {
 		String descricao = "";
 		try (BufferedReader inHtml = new BufferedReader(
 				new FileReader(rotaHtm))) {
-			
+
 			StringBuilder sb = new StringBuilder();
 
 			while ((descricao = inHtml.readLine()) != null) {
