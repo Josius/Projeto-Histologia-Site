@@ -4,10 +4,10 @@
 <body>
 	<article class="narrativa" th:fragment="article">
 		<h1 class="tituloTexto">
-			<span th:text="${lamina.nome}"></span>
+			<span th:text="*{nome}"></span>
 		</h1>
 		<div class="textoNarrativa">
-			<span th:utext="${lamina.descricaoHtm}"></span>
+			<span th:utext="*{descricaoHtm}"></span>
 		</div>
 		<footer class="item-footer">
 			Guia Histológico

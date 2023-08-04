@@ -15,7 +15,7 @@
 
     <header th:replace="~{/fragments/visualizando/header :: header}"></header>
 
-    <section layout:fragment="content" class="flex-container flex-direction">
+    <section layout:fragment="content" class="flex-container flex-direction" th:object="${lamina}">
         <article th:replace="~{/fragments/visualizando/article :: article}"></article>
 
         <section id="myContainer"></section>
