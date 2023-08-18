@@ -13,7 +13,7 @@ import lombok.Data;
 public class Lamina {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	// @GeneratedValue(strategy = GenerationType.IDENTITY) // 
 	private UUID id;
 	private String nome;
 	private String descricaoHtm;
