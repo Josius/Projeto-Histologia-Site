@@ -17,4 +17,32 @@ INSERT INTO lamina(
 	'src/main/resources/templates/Assets/Narratives/L01PeleGrossaCoximdeGatoL2HE40.htm',
 	'Images/L01PeleGrossaCoximdeGatoL2HE40X.pff',
 	'zAnnotationPath=Assets/Annotations/Narratives/L01PeleGrossaCoximdeGatoL2HE40X-annotations.xml'
+),
+(
+	'bfe6ff6c-b27b-4154-99e6-d205175c4c3a',
+	'Traqueia e Epiglote',
+	'src/main/resources/templates/Assets/Narratives/respiratorio/L01TraqueiaEEpiglote.htm',
+	'Images/respiratorio/L01TraqueiaEEpiglote.pff',
+	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/L01TraqueiaEEpiglote-annotations.xml'
+),
+(
+	'316f2232-07bf-4021-83e7-7b3ecd180f01',
+	'Traqueia e Epiglote (verhoff)',
+	'src/main/resources/templates/Assets/Narratives/respiratorio/L03TraqueiaEEpiglote.htm',
+	'Images/respiratorio/L03TraqueiaEEpiglote.pff',
+	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/L03TraqueiaEEpiglote-annotations.xml'
+),
+(
+	'69a2f480-ddbb-494e-b6f6-747850d8621e',
+	'Traqueia e Epiglote de Cão',
+	'src/main/resources/templates/Assets/Narratives/respiratorio/LR02TraqueiaEEpigloteDeCao.htm',
+	'Images/respiratorio/LR02TraqueiaEEpigloteDeCao.pff',
+	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/LR02TraqueiaEEpigloteDeCao-annotations.xml'
+),
+(
+	'50e8ff51-b66f-4097-bff5-a9c4319ce90c',
+	'Pulmao',
+	'src/main/resources/templates/Assets/Narratives/respiratorio/LR05Pulmao.htm',
+	'Images/respiratorio/LR05Pulmao.pff',
+	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/LR05Pulmao-annotations.xml'
 );
