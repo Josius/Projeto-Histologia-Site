@@ -27,21 +27,21 @@ INSERT INTO lamina(
 ),
 (
 	'316f2232-07bf-4021-83e7-7b3ecd180f01',
-	'Traquéia e Epiglote (verhoff)',
+	'LR 03 Traqueia e Epiglote',
 	'src/main/resources/templates/Assets/Narratives/respiratorio/L03TraqueiaEEpiglote.htm',
 	'Images/respiratorio/L03TraqueiaEEpiglote.pff',
 	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/L03TraqueiaEEpiglote-annotations.xml'
 ),
 (
 	'69a2f480-ddbb-494e-b6f6-747850d8621e',
-	'Traquéia e Epiglote de Cão',
+	'LR 02 Epiglote de Cão',
 	'src/main/resources/templates/Assets/Narratives/respiratorio/LR02TraqueiaEEpigloteDeCao.htm',
 	'Images/respiratorio/LR02TraqueiaEEpigloteDeCao.pff',
 	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/LR02TraqueiaEEpigloteDeCao-annotations.xml'
 ),
 (
 	'50e8ff51-b66f-4097-bff5-a9c4319ce90c',
-	'Pulmão',
+	'LR 05 Pulmão',
 	'src/main/resources/templates/Assets/Narratives/respiratorio/LR05Pulmao.htm',
 	'Images/respiratorio/LR05Pulmao.pff',
 	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/LR05Pulmao-annotations.xml'
