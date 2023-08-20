@@ -1,5 +1,5 @@
 ### HISTOLOGIA ###
-/src/main/resources/static/Images/*.pff
+/src/main/resources/static/Images/**
 
 HELP.md
 target/
