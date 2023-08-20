@@ -24,12 +24,10 @@ public class LaminaController {
 
 		ModelAndView mv = new ModelAndView("visualizando/lamina.html");
 
-		// Lãminas principais de teste
-		// LaminaRecord lamina = laminaService.getLamina("f391e054-6dde-4198-bdbd-14fa9496e2c4");
+		
+		LaminaRecord lamina = laminaService.getLamina("f391e054-6dde-4198-bdbd-14fa9496e2c4");
 		// LaminaRecord lamina = laminaService.getLamina("ac9344eb-2f29-4402-bba9-82a353b8899e");
-		LaminaRecord lamina = laminaService.getLamina("50e8ff51-b66f-4097-bff5-a9c4319ce90c");
-		// Lãminas principais de teste
-
+		// LaminaRecord lamina = laminaService.getLamina("50e8ff51-b66f-4097-bff5-a9c4319ce90c");
 		// LaminaRecord lamina = laminaService.getLamina("bfe6ff6c-b27b-4154-99e6-d205175c4c3a");
 		// LaminaRecord lamina = laminaService.getLamina("316f2232-07bf-4021-83e7-7b3ecd180f01");
 		// LaminaRecord lamina = laminaService.getLamina("69a2f480-ddbb-494e-b6f6-747850d8621e");
@@ -43,7 +41,6 @@ public class LaminaController {
 // "f391e054-6dde-4198-bdbd-14fa9496e2c4"	-> id Pele Fina
 // "ac9344eb-2f29-4402-bba9-82a353b8899e"	-> id Pele Grossa
 // "50e8ff51-b66f-4097-bff5-a9c4319ce90c"	-> id LR05Pulmao
-
 // "bfe6ff6c-b27b-4154-99e6-d205175c4c3a"	-> id L01TraqueiaEEpiglote
 // "316f2232-07bf-4021-83e7-7b3ecd180f01"	-> id L03TraqueiaEEpiglote
 // "69a2f480-ddbb-494e-b6f6-747850d8621e"	-> id LR02TraqueiaEEpigloteDeCao

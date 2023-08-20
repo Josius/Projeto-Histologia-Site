@@ -20,7 +20,7 @@ INSERT INTO lamina(
 ),
 (
 	'bfe6ff6c-b27b-4154-99e6-d205175c4c3a',
-	'Traqueia e Epiglote',
+	'LR 01 Traqueia e Epiglote',
 	'src/main/resources/templates/Assets/Narratives/respiratorio/L01TraqueiaEEpiglote.htm',
 	'Images/respiratorio/L01TraqueiaEEpiglote.pff',
 	'zAnnotationPath=Assets/Annotations/Narratives/respiratorio/L01TraqueiaEEpiglote-annotations.xml'
