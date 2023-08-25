@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" th:href="@{/css/visualizando/geral.css}" type="text/css">
     <link rel="stylesheet" th:href="@{/css/visualizando/header.css}" type="text/css">
     <link rel="stylesheet" th:href="@{/css/visualizando/article.css}" type="text/css">
-
+    
     <script type="text/javascript" src="ZoomifyImageViewerEnterprise-min.js"></script>
 
 </head>
 
 <body class="overflow-y">
 
-    <header th:replace="~{/fragments/visualizando/header :: header}"></header>
+    <header th:replace="~{/fragments/visualizando/header.html :: header}"></header>
 
     <section layout:fragment="content" class="flex-container flex-direction" th:object="${lamina}">
         <article th:replace="~{/fragments/visualizando/article :: article}"></article>

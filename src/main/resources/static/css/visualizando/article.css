@@ -1,7 +1,17 @@
+.tituloTexto{
+    /* color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #1094ab;
+    margin: 0;
+    text-align: center;
+    font-weight: bold; */
+}
+
 .narrativa{
     
-    background-color: #ededed;
-    height: 100%;
+    /* height: 100%;
     max-height: 600px;
     width: 100%;
     max-width: 450px;
@@ -17,35 +27,23 @@
     
     margin: 0;
     border: 0;
-    padding: 0;
+    padding: 0; */
 }
 
-.tituloTexto{
-    font-family: Source Sans Pro SemiBold;
-    color: white;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #1094ab;
-    margin: 0;
-    text-align: center;
-    font-weight: bold;
-}
+
 
 .textoNarrativa{
-    margin-left: 10px;
-    font-family: Montserrat;
-    font-size: 14px;
+    /* margin-left: 10px;
+    font-size: 14px; */
 }
 
 .item-footer{
-    font-family: Source Sans Pro SemiBold;
-    position: sticky;
+    /* position: sticky;
     bottom: 0;
     width: 100%;
     color: white;
     background-color: #1094ab;
     text-align: center;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: bold; */
 }

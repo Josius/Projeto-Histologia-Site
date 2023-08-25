@@ -1,11 +1,28 @@
 .cabecalho{
     
-    font-family: Source Sans Pro SemiBold; /*TESTE DE FONTE PARA CABEÇALHOS, RODAPÉS E TÍTULOS*/
-    color: white;
-    background-color: #64c4d2;
-    padding: 3px;
-    border-bottom-color: #fcb421;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    justify-content:space-between;
+    /* margin: 0 0 10px 0; */
+    /* box-shadow: 0 10px 10px #dadbd6; */
+}
+
+.navegacao{
+    /* border: 1px solid yellow; */
+}
+
+.barra {
+    /* border: 1px solid red; */
+    justify-content: center;
+    list-style-type: none;
+    border-bottom: 1px solid #dee4e2;
+}
+
+.item {
+    
+    padding: 8px 10px;
+    color: #0e567c;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    background-color:#dee4e2;
 }

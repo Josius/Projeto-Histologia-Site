@@ -1,117 +1,21 @@
-p{
-    margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f2f3ee;
+    box-sizing: border-box;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
 }
 
-.flex-pos{
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+#myContainer {
 
-/* para mudar posicoes do txt e da img */
-/* .flex-direction{
-    flex-direction: row-reverse;
-}
-*/
-
-/* .imagem não funciona */
-/* .imagem{
-    width:"60%";
-    height:"60%";
-}
-*/
-
-/* 
-#titulo{
-    color: white;
-    background-color: #64c4d2;    
-}
-*/
-
-.overflow-y{
-    /* font-family: montserrat, arial, sans-serif; */
-    /* font-family: Source Sans Pro, sans-serif; */
-    margin: auto;
-    background-color: #d3e1ed;
-    overflow-y: hidden;
-}
-
-#myContainer{
-    
-    width:100%;
+    width: 100%;
     height: 100%;
     max-height: 600px;
-    border:0px;
+    border: 0px;
 }
-
-/* header  */
-/* .cabecalho{
-    
-    font-family: Source Sans Pro SemiBold;
-    color: white;
-    background-color: #64c4d2;
-    padding: 3px;
-    border-bottom-color: #fcb421;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    justify-content:space-between;
-} */
-
-/* article */
-/* .narrativa{
-    
-    background-color: #ededed;
-    height: 100%;
-    max-height: 600px;
-    width: 100%;
-    max-width: 450px;
-
-    justify-self: center;
-    padding: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    letter-spacing: 0.1rem;
-    line-height: 150%;
-    overflow-y: scroll;
-    font-size: 15px;
-    
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-.tituloTexto{
-    font-family: Source Sans Pro SemiBold;
-    color: white;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #1094ab;
-    margin: 0;
-    text-align: center;
-    font-weight: bold;
-}
-
-.textoNarrativa{
-    margin-left: 10px;
-    font-family: Montserrat;
-    font-size: 14px;
-}
-
-.item-footer{
-    font-family: Source Sans Pro SemiBold;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background-color: #1094ab;
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;
-} */
-
-
-
