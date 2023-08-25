@@ -23,6 +23,6 @@
     transition: 0.2s;
 }
 
-a:hover {
+.barra a:hover {
     background-color:#dee4e2;
 }

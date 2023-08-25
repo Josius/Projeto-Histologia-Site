@@ -3,9 +3,7 @@
 
 <article class="narrativa" th:fragment="article">
 	<h1 class="tituloTexto" th:text="*{nome}"> </h1>
-	<div class="textoNarrativa" >
-		<span th:utext="*{descricaoHtm}"></span>
-	</div>
+	<span class="textoNarrativa" th:utext="*{descricaoHtm}"></span>
 	<footer class="item-footer">Guia Histológico</footer>
 </article>
 
