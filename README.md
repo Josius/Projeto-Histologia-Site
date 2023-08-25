@@ -19,8 +19,6 @@ Aplicação que permite a visualização de diversas lâminas histológicas, com
 # Funcionalidade Visualização Lâmina
 Esta é a página a qual poderemos interagir com uma determinada lâmina. Poderemos ler sua descrição, efetuar ampliação de qualquer área da lâmina e ser direcionado para uma área pré-determinada na lâmina por meio de ligações de referência no texto da lâmina, podendo assim saber a qual parte da lâmina o texto se refere.
 
-https://github.com/Josius/Projeto-Histologia-Site/assets/58814756/a121eed6-4b42-43e8-a283-0fab55ddc091
-
 ## Estrutura da funcionalidade Visualização Lâmina
 Esta funcionalidade, seguindo a estrutura do padrão MVC, sendo eles:
 ### Model e Controller
