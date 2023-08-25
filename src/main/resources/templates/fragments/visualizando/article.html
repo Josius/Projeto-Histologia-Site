@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-<body>
-	<article class="narrativa" th:fragment="article">
-		<h1 class="tituloTexto">
-			<span th:text="*{nome}"></span>
-		</h1>
-		<div class="textoNarrativa">
-			<span th:utext="*{descricaoHtm}"></span>
-		</div>
-		<footer class="item-footer">
-			Guia Histológico
-		</footer>
-
-	</article>
-
-</body>
+<article class="narrativa" th:fragment="article">
+	<h1 class="tituloTexto" th:text="*{nome}"> </h1>
+	<div class="textoNarrativa" >
+		<span th:utext="*{descricaoHtm}"></span>
+	</div>
+	<footer class="item-footer">Guia Histológico</footer>
+</article>
 
 </html>
