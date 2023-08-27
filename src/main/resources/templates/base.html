@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Histologia</title>
+    
+    <!-- 
+    Thymeleaf
+    Uma imagem é referenciada dentro do thymeleaf com path relativo, tal como: /images/test.png.
+    O caminho relativo parte de src/main/resources/static, isso quer dizer que o arquivo de imagens está em src/main/resources/static/images/test.png.
+    -->
+    <link rel="stylesheet" th:href="@{/css/base.css}" type="text/css">
+</head>
+
+<body>
+    <header class="cabecalho ">
+        <nav class="navegacao">
+            <!-- VER: https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html -->
+            <ul class="barra flex-container">
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}" class="item-a"> Histologia </a>
+                </li>
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}"> Capítulos </a>
+                </li>
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}"> Navegar </a>
+                </li>
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}"> Índice </a>
+                </li>
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}"> Ajuda </a>
+                </li>
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}"> Sobre </a>
+                </li>
+                <li class="item">
+                    <a href="rota/arquivo.html" th:href="@{/rota/rota}"> Área Restrita </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section layout:fragment="content">
+
+        <article>
+            <section>lado esquerdo</section>
+        </article>
+        <aside>lado direito</aside>
+    </section>
+    <footer>rodapé pg base</footer>
+</body>
+
+</html>

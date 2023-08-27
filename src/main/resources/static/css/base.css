@@ -1,0 +1,65 @@
+/* GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: #f2f3ee;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+p {
+	padding: 20px;
+}
+.flex-container {
+	display: flex;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+/* Barra de navegação */
+.cabecalho {
+	/* margin: 0 0 10px 0; */
+	box-shadow: 0 10px 10px #dee4e2;
+	position: sticky;
+    top: 0;
+}
+
+.navegacao {
+	
+	/* border: 1px solid yellow; */
+}
+
+.barra {
+	list-style-type: none;
+	justify-content: center;
+    border-bottom: 2px solid #dee4e2;
+}
+
+.item {
+	padding: 10px 20px;
+}
+
+.item-a {
+	/* font-size: 1.1rem; */
+}
+
+.barra *:hover {
+	background-color:#dee4e2;	
+}
+
+.barra *:hover a {
+	background-color:#dee4e2;	
+}
+
+.item a {
+	color: #0e567c;	
+	/* font-weight: bold; */
+	text-decoration: none;
+}
